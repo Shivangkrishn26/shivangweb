@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+     body{
+        background-color: black;
+     }
+     #box{
+        margin-left: 73px;
+        display: flex;
+        width: 200px;
+        height: 200px;
+
+        color: burlywood;
+        justify-content: center;
+        align-items: center;
+        /* transition-property: background-color;
+        transition-timing-function: ease-in;
+        transition-duration: 2s;
+        transition-delay: 2s; */
+
+        /* transition: background-color 1s ease-in-out; */
+        transition: all 1s ease-in-out;
+/*           all for applying transition in all the elements  */
+     }
+
+     #box:hover{
+        background-color: yellow;
+        height: 350px;
+        width: 450px;
+        border-radius: 24px;
+        font-size: 28px;
+     }
+    </style>
+</head>
+<body>
+    <h2>This is my cake</h2>
+    <div class="container">
+        <div id="box">
+            <img src="https://cdn.pixabay.com/photo/2015/05/07/15/08/cookie-756601__480.jpg"  alt="">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>
